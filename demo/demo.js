@@ -2,19 +2,15 @@ var UPLOAD_FILE = new Vue({
     el: '#demo',
     data: {
         social: ['twitter'],
-        data: ''
+        selectArr: [
+            { name: '111', value: 0 },
+            { name: '222', value: 1 }
+        ],
+        tempSelect: 0
+    },
+    methods: {
+        selectChange: function () {
+            console.log(this.tempSelect)
+        }
     }
 })
-
-
-var a = 10
-function fn () {
-    var b = 20
-    function bar () {
-        console.log(a + b)
-    }
-    return bar;
-}
-
-var x = fn(), b = 200
-x()

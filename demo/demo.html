@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>上传文件</title>
     <link rel="stylesheet" href="./iview/styles/green-theme.css">
-    <link rel="stylesheet" href="./calendar.js-master/dist/css/calendar.css"/>
+    <link rel="stylesheet" href="./calendar.js-master/dist/css/calendar.css" />
 </head>
 
 <body>
@@ -28,8 +28,12 @@
                 <span>Snapchat</span>
             </Checkbox>
         </checkbox-group> -->
-        
+
         <!-- <date-picker type="datetime" :time-picker-options="{steps: [1, 10, 10]}" show-week-numbers v-model="data" style="width: 200px" :transfer=true></date-picker> -->
+
+        <i-select v-model="tempSelect" @on-change="selectChange">
+            <i-option v-for="item in selectArr" :value="item.value">{{item.name}}</i-option>
+        </i-select>
     </div>
     <script src="./vue/vue.js"></script>
     <script src="./iview/iview.min.js"></script>
