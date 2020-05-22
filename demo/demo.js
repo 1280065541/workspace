@@ -14,3 +14,11 @@ var UPLOAD_FILE = new Vue({
         }
     }
 })
+
+var b = 3;
+(function () {
+    b = 5;
+    var b = 2;
+    console.log(this)
+})();
+console.log(b);
