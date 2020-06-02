@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div id="demo">
+    <div id="demo">{{a}}
         <!-- <checkbox-group v-model="social">
             <Checkbox label="twitter">
                 <Icon type="logo-twitter"></Icon>
@@ -27,12 +27,10 @@
                 <span>Snapchat</span>
             </Checkbox>
         </checkbox-group> -->
-
-        <!-- <date-picker type="datetime" :time-picker-options="{steps: [1, 10, 10]}" show-week-numbers v-model="data" style="width: 200px" :transfer=true></date-picker> -->
-
-        <i-select v-model="tempSelect" @on-change="selectChange">
+        <!-- <i-select v-model="tempSelect" @on-change="selectChange">
             <i-option v-for="item in selectArr" :value="item.value">{{item.name}}</i-option>
-        </i-select>
+        </i-select> -->
+        <!-- <date-picker type="month" @on-change="test" v-model="dates" multiple placement="bottom-end" placeholder="选择月份" style="width: 200px"></date-picker> -->
     </div>
     <script src="./vue/vue.js"></script>
     <script src="./iview/iview.min.js"></script>
