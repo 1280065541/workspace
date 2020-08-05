@@ -1,0 +1,19 @@
+video::-internal-media-controls-overflow-menu-list{
+    display: none;
+}
+
+.pip-presented {
+    display: none !important;
+}
+
+video::-internal-media-controls-overflow-menu-list {
+    display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+}
