@@ -10,7 +10,9 @@
 
 <body>
     <div id="demo">
-
+        <date-picker v-model="time" type="year"
+            style="width: 150px;" :options="options" :transfer=true :clearable=false>
+        </date-picker>
     </div>
     <script src="./vue/vue.js"></script>
     <script src="./iview/iview.min.js"></script>
